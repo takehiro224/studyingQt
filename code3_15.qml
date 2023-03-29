@@ -11,7 +11,7 @@ Window {
         Text {
             id: myText
             anchors.fill: parent
-            text: ""Not Pressed.""
+            text: "Not Pressed."
         }
 
         MouseArea {
@@ -22,11 +22,11 @@ Window {
             }
             onPressedChanged: {
                 if (pressed) {
-                    myText.text = ""Pressed.""
+                    myText.text = "Pressed."
                 } else {
-                    myText.text = ""Not Pressed.""
+                    myText.text = "Not Pressed."
                 }
             }
         }
     }
-}"
+}
